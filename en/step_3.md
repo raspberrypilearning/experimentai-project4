@@ -46,7 +46,8 @@ You’re going to create the code for one sprite, then duplicate it to the rest 
 Add a `When this sprite clicked`{:class="block3events"} block to your first sprite.
 
 ```blocks3
-when green flag clicked
+when this sprite clicked
+
 ```
 
 --- /task ---
@@ -80,7 +81,7 @@ delete all of [playlist v]
 
 --- task ---
 
-From the Sensing menu, add a `ask( ) and wai`{:class="block3sensing"}t block. 
+From the Sensing menu, add a `ask( ) and wait`{:class="block3sensing"} block. 
 Change the text in the field to ask your user how many songs they want in their playlist:
 
 ```blocks3

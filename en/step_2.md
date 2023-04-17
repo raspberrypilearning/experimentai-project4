@@ -1,6 +1,8 @@
-## 
+## Set up in Scratch
 
-Before you create your playlist generator app, train your model again to make sure you have all the 
+<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
+Before you create your playlist generator app, train your model again to make sure you have the most up-to-date model possible.
+</p>
 
 --- task ---
 
