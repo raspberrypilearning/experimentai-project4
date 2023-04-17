@@ -158,7 +158,7 @@ Your app is rejecting everything:
 ![](images/reject_image.png)
 
 Your app is finding songs, but not adding them to the list:
-+ Have you got `Playlist` selected as the value in the orange `add (artist - song title) to Playlist` block pull-down menu?
++ Have you got `Playlist` selected as the value in the orange `add (artist - song title) to Playlist`{:class="block3variables"} block pull-down menu?
 
 --- /collapse ---
 
@@ -177,7 +177,7 @@ Check the cyan coloured song information readouts when you run your app. **Are t
 **Your app hasn’t found a song on the music database:**
 + Have you correctly spelled the genre you want to search? Misspellings will result in your search returning nothing.
 + Have you inserted the genre bubble in the random song from genre block? It should look like this: 
-
+![](images/random_song.png)
 
 **Your app is playing a song, but you can’t hear anything:**
 + Make sure your headphones are properly plugged in (if you have them), and that your sound is turned on.

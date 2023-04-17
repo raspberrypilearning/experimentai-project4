@@ -24,7 +24,7 @@ repeat until ()
 
 --- task ---
 
-From the green `Operators`{:class="block3operators"} menu, place a gem-shaped `( ) = (50`{:class="block3operators"}) block into the gem shaped hole in the repeat until block:
+From the green `Operators`{:class="block3operators"} menu, place a gem-shaped `( ) = (50)`{:class="block3operators"} block into the gem shaped hole in the repeat until block:
 
 ```blocks3
 when this sprite clicked

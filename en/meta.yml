@@ -11,3 +11,5 @@ steps:
   - title: Set your playlist length
   - title: Search for songs
   - title: Compare songs with your model
+  - title: Play back your playlist
+  - title: What next?
