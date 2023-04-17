@@ -43,18 +43,6 @@ On your [**project page**](https://machinelearningforkids.co.uk/#!/projects){:ta
 
 --- /task ---
 
---- task ---
-
-On the next page, select Scratch 3
-![](images/scratch3_button.png)
-
-**NOTE:** You will get a warning telling you that you haven’t trained a model yet - it’s not a problem; that’s what we are about to do! 
-
-**Select** straight into Scratch by clicking the button:
-![A warning which reads You haven't trained a machine learning model yet](images/straight_into_scratch.png)
-
---- /task ---
-
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 A special fork of Scratch will open in a new tab. When it does, you will see an item in the left-hand menu with the same name as your machine learning project.
