@@ -10,3 +10,6 @@ steps:
   - title: Set up in Scratch 
   - title: Set your playlist length
   - title: Search for songs
+  - title: Compare songs with your model
+  - title: Play back your playlist
+  - title: What next?

@@ -107,7 +107,7 @@ From the same menu, add a `set [genre] to (0)`{:class="block3variables"} block a
 when this sprite clicked
 delete all of [playlist v]
 ask (How many songs would you like?) and wait
-set [length v] to (0)
+set [length v] to [0]
 ```
 
 --- /task ---
@@ -172,8 +172,8 @@ Put values into the two pop-ups which appear and make sure your variables change
 ![](images/var_readout.png)
 
 **Note:**
-Typing anything other than a number into the length field will result in an error, later in your application.
-Typing anything other than a recognised genre on Spotify will result in no music being found on the database.
++ Typing anything other than a number into the length field will result in an error, later in your application.
++ Typing anything other than a recognised genre on Spotify will result in no music being found on the database.
 
 --- /task ---
 
