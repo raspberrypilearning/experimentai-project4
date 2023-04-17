@@ -1,59 +1,23 @@
 ## Introduction
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+Now you have trained your ML model, you need to test that it returns songs like the ones you specified. 
 
-### What you will make
+In this stage, you will create the Scratch application that will use your trained model to create a list of songs for each of your classes.
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+**Your project will:**
++ Search for songs on the music database in a genre you specify
++ Compare the songs returned against the chosen class in your trained model
++ Reject songs which match your reject class definition
++ Reject songs which don’t match your chosen class definition
++ Provide audio feedback to the user that a rejection has taken place
++ Compile song titles which match your chosen class definition to generate a ‘playlist’
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+**Your project should:**
++ Play back songs in your generated playlist
++ Use similar sprites to your classification application
++ Provide visual and audio feedback while compiling a playlist
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
 
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+**Your project could:**
++ Play back songs in your generated playlist in ‘shuffle mode’
