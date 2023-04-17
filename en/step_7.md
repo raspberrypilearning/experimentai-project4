@@ -1,7 +1,9 @@
 ## What next?
 
 If you have time, why not add some more features to your application to improve the User Experience (UX)?
-You could:
+
+
+#### You could:
 
 + **Add visual feedback:** animate sprites while the playlist is compiling or show when it is done
 + **Make a ‘shuffle’ button:** add a new sprite that plays back your `Playlist`{:class="block3variables"} at `random`{:class="block3operators"}
