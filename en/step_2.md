@@ -1,6 +1,8 @@
-## 
+## Set up in Scratch
 
-Before you create your playlist generator app, train your model again to make sure you have all the 
+<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
+Before you create your playlist generator app, train your model again to make sure you have the most up-to-date model possible.
+</p>
 
 --- task ---
 
@@ -40,18 +42,6 @@ Select Learn & Test.
 
 On your [**project page**](https://machinelearningforkids.co.uk/#!/projects){:target="_blank"}, select **Make**:
 ![Image showing a button reading Make and the explanation 'Use the machine learning model you've trained to make a game or app, in Scratch, Python, or App Inventor'](images/make_button.png)
-
---- /task ---
-
---- task ---
-
-On the next page, select Scratch 3
-![](images/scratch3_button.png)
-
-**NOTE:** You will get a warning telling you that you haven’t trained a model yet - it’s not a problem; that’s what we are about to do! 
-
-**Select** straight into Scratch by clicking the button:
-![A warning which reads You haven't trained a machine learning model yet](images/straight_into_scratch.png)
 
 --- /task ---
 
