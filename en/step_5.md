@@ -17,20 +17,6 @@ To generate a playlist, the script should now:
 From the golden `Control`{:class="block3control"} menu, add an `if / else`{:class="block3control"} block, beneath the green `random song from genre`{:class="block3flag"} block:
 
 ```blocks3
-when this sprite clicked
-delete all of [playlist v]
-ask [How many songs would you like?] and wait
-set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
-repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
-if <> then
-else
-
-```
-
-```blocks3
 when green flag clicked
 ask [What's your name?] and wait
 ```
