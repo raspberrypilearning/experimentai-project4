@@ -30,6 +30,11 @@ else
 
 ```
 
+```blocks3
+when green flag clicked
+ask [What's your name?] and wait
+```
+
 --- /task ---
 
 --- task ---
