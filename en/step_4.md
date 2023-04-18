@@ -40,7 +40,7 @@ repeat until <[] =[50]>
 
 --- task ---
 
-From the orange List menu, add a `length of [Playlist]`{:class="block3variables"} block into the first hole of the green operator block:
+From the orange `List`{:class="block3variables"} menu, add a `length of [Playlist]`{:class="block3variables"} block into the **first** hole of the green operator block:
 
 ```blocks3
 when this sprite clicked
@@ -56,7 +56,7 @@ repeat until <(length of [Playlist v])=[50]>
 
 --- task ---
 
-From the orange `Variables`{:class="block3variables"} menu, add a length bubble to the second hole of the green operator block:
+From the orange `Variables`{:class="block3variables"} menu, add a `length`{:class="block3variables"} bubble to the **second** hole of the green operator block:
 
 ```blocks3
 when this sprite clicked
