@@ -455,7 +455,7 @@ Once you have made sure your code is working on this sprite, **Drag and drop** t
 
 --- task ---
 
-You will also need to change the grey ML4K bubble which compares the song to the sprite's class **on every sprite**:
+You will  need to change the grey ML4K bubble which compares the song to the sprite's class **on every sprite**:
 
 ```blocks3
 when this sprite clicked
@@ -476,7 +476,18 @@ else
 play sound [boing v]
 ```
 
+The bubble you use on your sprite should match the sprite name. This is how the app compares the found song to your preferences for that playlist in the ML model.
+
 --- /task ---
+
+--- task ---
+
+You now need to add the rejection sound to each of your sprites.
+
+[[[generic-scratch3-sound-from-library]]]
+
+--- /task ---
+
 
 
 In the next step, you will add the functionality to play back your generated playlist!
