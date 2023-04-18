@@ -476,7 +476,7 @@ else
 play sound [boing v]
 ```
 
-The bubble you use on your sprite should match the sprite name. This is how the app compares the found song to your preferences for that playlist in the ML model.
+The bubble you use on your sprite should match the sprite name. This is how the app compares the found song to your preferences for that in the ML model.
 
 --- /task ---
 
