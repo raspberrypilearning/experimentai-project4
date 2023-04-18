@@ -16,11 +16,39 @@ To generate a playlist, the script should now:
 
 From the golden `Control`{:class="block3control"} menu, add an `if / else`{:class="block3control"} block, beneath the green `random song from genre`{:class="block3flag"} block:
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <> then
+else
+
+```
+
 --- /task ---
 
 --- task ---
 
 From the green `Operators`{:class="block3operators"} menu, add an `equals`{:class="block3operators"} block to the slot in the `if / else`{:class="block3control"} block:
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <<>=<50>> then
+else
+
+```
 
 --- /task ---
 
@@ -29,6 +57,19 @@ From the green `Operators`{:class="block3operators"} menu, add an `equals`{:clas
 Open the ML4Kids menu and look for the grey `reject` bubble. 
 Drop it into the first slot on the `equals`{:class="block3operators"} block:
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=<50>> then
+else
+```
+
 --- /task ---
 
 --- task ---
@@ -36,14 +77,41 @@ Drop it into the first slot on the `equals`{:class="block3operators"} block:
 At the top of the same ML4Kids menu, you will see two longer grey bubbles.
 Drop the top one (it ends with (label)) into the second slot of your `equals`{:class="block3operators"} block: 
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness() danceability() energy() label :: #4b4c60)> then
+else
+```
+
 --- /task ---
 
 --- task ---
 
 Choose the green `Spotify`{:class="block3flag"} menu, and into the long grey bubble, add the green bubbles for each audio feature. 
+
 **Make sure that you get them in the right order!**
 
-**Pro Tip:** You can zoom the workspace out if you need to, and can scroll it using the bars at the bottom and right.
+**Pro Tip:** If your block is too long, you can zoom the workspace out with the magnifying glass if you need to, and can scroll it using the bars at the bottom and right.
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+else
+```
 
 --- /task ---
 
@@ -54,12 +122,41 @@ Instead, add a sound and use it as audio feedback to the user that a song has be
 
 [[[generic-scratch3-sound-from-library]]]
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+```
 --- /task ---
 
 --- task ---
 
 If the song doesn’t get rejected, it needs to be compared against the class your user has requested to see if it matches.
 Add another `if / else`{:class="block3control"} block into the else space in your script:
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <> then
+else
+```
 
 --- /task ---
 
@@ -70,24 +167,69 @@ Place the duplicated gem-shaped operator into the slot in your new `if / else`{:
 
 Remove the grey `reject` bubble from the new operator so the first hole is empty:
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <<>=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+else
+```
 --- /task ---
 
 --- task ---
 
-From the `ML4Kids` menu, insert the grey bubble which matches the sprite/playlist you are working on:
+From the `ML4Kids` menu, insert the grey bubble which matches the sprite/playlist you are working on (in this example it is `mood_boost`):
 
 ```blocks3
-
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+else
 ```
 
-This block is now comparing the song that wasn’t rejected against the requested class. 
-If it fits the class, it should be added to the Playlist. If not, it should be rejected
-
 --- /task ---
+
+This new `if` statement is now comparing the song that wasn’t rejected against the requested class. 
+If it fits the class, it should be added to the Playlist. If not, it should be rejected again.
 
 --- task ---
 
 From the orange `Variables`{:class="block3variables"} menu, scroll down and place an `add (thing) to [Playlist]`{:class="block3variables"} block into the `if` space:
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+add [thing] to [Playlist v]
+else
+```
+
 
 --- /task ---
 
@@ -97,11 +239,45 @@ These instructions will set up the **string** that will be added to the playlist
 
 From the `Operators`{:class="block3operators"} menu, place a `join (apple) (banana)`{:class="block3operators"} block into the empty slot of the new block:
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+add (join [apple] [banana]) to [Playlist v]
+else
+```
+
 --- /task ---
 
 --- task ---
 
 Place a second `join (apple) (banana)`{:class="block3operators"} block into the **second** slot of the first join block:
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+add (join (join [apple] [banana]) [banana]) to [Playlist v]
+else
+```
 
 --- /task ---
 
@@ -109,11 +285,45 @@ Place a second `join (apple) (banana)`{:class="block3operators"} block into the 
 
 From the green `Spotify`{:class="block3flag"} menu, add an `artist`{:class="block3flag"} bubble to the **first** slot of the three empty slots:
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+add (join (join (artist :: #338854) [banana]) [banana]) to [Playlist v]
+else
+```
+
 --- /task ---
 
 --- task ---
 
 Into the second slot, add a hyphen with a space either side of it:
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+add (join (join (artist :: #338854) [ - ]) [banana]) to [Playlist v]
+else
+```
 
 --- /task ---
 
@@ -121,6 +331,22 @@ Into the second slot, add a hyphen with a space either side of it:
 
 From the green Spotify menu, add a song title bubble to the last slot of the three empty slots:
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+add (join (join (artist :: #338854) [ - ]) (song title :: #338854)) to [Playlist v]
+else
+```
 --- /task ---
 
 --- task ---
@@ -128,12 +354,47 @@ From the green Spotify menu, add a song title bubble to the last slot of the thr
 The application should now play a sample of the song added to the playlist. 
 From the Spotify menu, add a play preview block under the orange add to playlist block:
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+add (join (join (artist :: #338854) [ - ]) (song title :: #338854)) to [Playlist v]
+play preview :: #338854
+else
+```
 --- /task ---
 
 --- task ---
 
-From the purple Sound menu, place a start sound () block into the empty else slot of the block, to give audio feedback to the user that another song has been rejected:
+From the purple Sound menu, place a `start sound ()`{:class="blocks3sounds"} block into the empty `else` slot of the block, to give audio feedback to the user that another song has been rejected:
 
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding
+add (join (join (artist :: #338854) [ - ]) (song title :: #338854)) to [Playlist v]
+play preview :: #338854
+else
+play sound [boing v]
+```
 --- /task ---
 
 --- task ---
@@ -183,5 +444,39 @@ Check the cyan coloured song information readouts when you run your app. **Are t
 + Make sure your headphones are properly plugged in (if you have them), and that your sound is turned on.
 
 --- /collapse ---
+
+--- task ---
+
+Once you have made sure your code is working on this sprite, **Drag and drop** the script onto your other sprites to duplicate it.
+
+![](images/dupe_script.gif)
+
+--- /task ---
+
+--- task ---
+
+You will also need to change the grey ML4K bubble which compares the song to the sprite's class **on every sprite**:
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [genre v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre (genre) :: #338854
+if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label) :: #4b4c60)> then
+play sound [boing v]
+else
+if <(mood_boost :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then // Change the first bubble to match the sprite you are coding on EVERY sprite in your app
+add (join (join (artist :: #338854) [ - ]) (song title :: #338854)) to [Playlist v]
+play preview :: #338854
+else
+play sound [boing v]
+```
+
+--- /task ---
+
 
 In the next step, you will add the functionality to play back your generated playlist!

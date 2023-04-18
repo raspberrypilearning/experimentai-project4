@@ -33,7 +33,7 @@ ask [How many songs would you like?] and wait
 set [length v] to (answer)
 ask [What genre would you like?] and wait
 set [length v] to (answer)
-repeat until [] =[50])
+repeat until <[] =[50]>
 ```
 
 --- /task ---
@@ -49,7 +49,7 @@ ask [How many songs would you like?] and wait
 set [length v] to (answer)
 ask [What genre would you like?] and wait
 set [length v] to (answer)
-repeat until ((length of [Playlist v])=[50])
+repeat until <(length of [Playlist v])=[50]>
 ```
 
 --- /task ---
@@ -65,7 +65,7 @@ ask [How many songs would you like?] and wait
 set [length v] to (answer)
 ask [What genre would you like?] and wait
 set [length v] to (answer)
-repeat until ((length of [Playlist v])=(length))
+repeat until <(length of [Playlist v])=(length)>
 ```
 This will make a loop that repeats until the Playlist is the length your user defined earlier.
 
@@ -84,7 +84,7 @@ ask [How many songs would you like?] and wait
 set [length v] to (answer)
 ask [What genre would you like?] and wait
 set [length v] to (answer)
-repeat until ((length of [Playlist v])=(length))
+repeat until <(length of [Playlist v])=(length)>
 random song from genre [] :: #338854
 ```
 
@@ -102,7 +102,7 @@ ask [How many songs would you like?] and wait
 set [length v] to (answer)
 ask [What genre would you like?] and wait
 set [genre v] to (answer)
-repeat until ((length of [Playlist v])=(length))
+repeat until <(length of [Playlist v])=(length)>
 random song from genre (genre) :: #338854
 ```
 
