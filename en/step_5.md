@@ -33,17 +33,6 @@ else
 
 --- task ---
 
-MAGDA In the blue `Sensing`{:class="block3sensing"}  menu, add an `ask (What's your name?) and wait`{:class="block3sensing"} block:
-
-```blocks3
-when green flag clicked
-ask [What's your name?] and wait
-```
-
---- /task ---
-
---- task ---
-
 From the green `Operators`{:class="block3operators"} menu, add an `equals`{:class="block3operators"} block to the slot in the `if / else`{:class="block3control"} block:
 
 ```blocks3
