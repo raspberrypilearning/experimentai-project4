@@ -27,7 +27,6 @@ repeat until <(length of [Playlist v])=(length)>
 random song from genre (genre) :: #338854
 if <> then
 else
-
 ```
 
 --- /task ---
