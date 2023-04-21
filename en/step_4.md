@@ -106,9 +106,68 @@ repeat until <(length of [Playlist v])=(length)>
 random song from genre (genre) :: #338854
 ```
 
+--- /task ---
+
+--- task ---
+
+For testing, add a `play preview`{:class="block3flag"} block from the green `Spotify`{:class="block3flag"} menu.
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [length v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre [] :: #338854
+play preview :: #338854
+```
 
 --- /task ---
+
+--- task ---
+
+**Click the sprite you are working on.** Type in answers to the prompts and press Enter - you should hear a song from your chosen genre begin playing.
+
+--- /task ---
+
+--- task ---
+
+For testing, add a `play preview`{:class="block3flag"} block from the green `Spotify`{:class="block3flag"} menu.
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [length v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre [] :: #338854
+play preview :: #338854
+```
+
+--- /task ---
+
 
 Now that your script has returned a song from the genre your user chose, the song needs to be compared against your model to determine if it fits their preferences for the playlist they want. If it doesn’t fit, it won’t be added and the application should search again.
 
 
+
+--- task ---
+
+Once you have tested your script, remove the `play preview`{:class="block3flag"} block before moving on to the next step.
+
+```blocks3
+when this sprite clicked
+delete all of [playlist v]
+ask [How many songs would you like?] and wait
+set [length v] to (answer)
+ask [What genre would you like?] and wait
+set [length v] to (answer)
+repeat until <(length of [Playlist v])=(length)>
+random song from genre [] :: #338854
+```
+
+--- /task ---
