@@ -1,8 +1,6 @@
 title: Experience AI Challenge Stage 4 - Make a playlist generator
 hero_image: images/banner.png
-description: Now you have trained your ML model, you need to test that it returns songs like the ones you specified. 
-
-In this stage, you will create the Scratch application that will use your trained model to create a list of songs for each of your classes.
+description: Now you have trained your ML model, you need to test that it returns songs like the ones you specified. In this stage, you will create the Scratch application that will use your trained model to create a list of songs for each of your classes.
 version: 4
 listed: false
 copyedit: false
