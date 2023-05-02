@@ -21,10 +21,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <> then
 else
 ```
@@ -40,10 +38,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <<>=<50>> then
 else
 
@@ -61,10 +57,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=<50>> then
 else
 ```
@@ -81,10 +75,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness() danceability() energy() label :: #4b4c60)> then
 else
 ```
@@ -104,10 +96,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 else
 ```
@@ -126,10 +116,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -146,10 +134,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -171,10 +157,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -192,10 +176,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -217,10 +199,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -243,10 +223,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -266,10 +244,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -289,10 +265,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -312,10 +286,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -335,10 +307,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -358,10 +328,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -381,10 +349,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label\) :: #4b4c60)> then
 play sound [boing v]
 else
@@ -461,10 +427,8 @@ when this sprite clicked
 delete all of [playlist v]
 ask [How many songs would you like?] and wait
 set [length v] to (answer)
-ask [What genre would you like?] and wait
-set [genre v] to (answer)
 repeat until <(length of [Playlist v])=(length)>
-random song from genre (genre) :: #338854
+random song :: #338854
 if <(reject :: #4b4c60)=(recognise numbers acousticness(Song [acousticness score v] :: #338854) danceability(Song [danceability v] :: #338854) energy(Song [energy v] :: #338854) \(label) :: #4b4c60)> then
 play sound [boing v]
 else

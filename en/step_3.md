@@ -94,14 +94,14 @@ ask (How many songs would you like?) and wait
 
 --- task ---
 
-Select the `Variables`{:class="block3variables"} menu again and make two new variables - genre and length.
+Select the `Variables`{:class="block3variables"} menu again and make a new variable called `length`.
 ![](images/genre_length.png)
 
 --- /task ---
 
 --- task ---
 
-From the same menu, add a `set [genre] to (0)`{:class="block3variables"} block and change the pull-down menu to say length:
+From the same menu, add a `set [length] to (0)`{:class="block3variables"} block:
 
 ```blocks3
 when this sprite clicked
@@ -140,36 +140,6 @@ You should see your length variable change to what you typed:
 ![](images/length_readout.png)
 
 --- /task ---
-
---- task ---
-
-Duplicate the last two blocks by right-clicking (two fingers on Mac) the blue ask ( ) and wait block and choosing Duplicate.
-![](images/dupe_length.png)
-
---- /task ---
-
---- task ---
-
-Add the duplicated blocks to the end of your script.
-Change the question to ask which genre the user would like to hear.
-Change the pull-down in the orange set [length] to (answer) block to say genre:
-
-```blocks3
-when this sprite clicked
-delete all of [playlist v]
-ask (How many songs would you like?) and wait
-set [length v] to (answer)
-ask (What genre would you like?) and wait
-set [length v] to (answer)
-```
-
---- /task ---
-
---- task ---
-
-**Click the sprite.**
-Put values into the two pop-ups which appear and make sure your variables change: 
-![](images/var_readout.png)
 
 **Note:**
 + Typing anything other than a number into the length field will result in an error, later in your application.
